@@ -54,11 +54,11 @@ Citizen.CreateThread( function()
 			local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
 			local carPos = GetEntityCoords(vehicle)
 			local LPos = GetOffsetFromEntityInWorldCoords(vehicle, 2.0, value_y, value_z)
-            local RPos = GetOffsetFromEntityInWorldCoords(vehicle, -2.0, value_y, value_z)
+			local RPos = GetOffsetFromEntityInWorldCoords(vehicle, -2.0, value_y, value_z)
 			local forPos = GetOffsetFromEntityInWorldCoords(vehicle, 0, value_y, value_z)
-            DrawLine(carPos, forPos, 255,0,0,255)
-            DrawLine(forPos, LPos, 0,0,255,255)
-            DrawLine(forPos, RPos, 0,0,255,255)
+		    	DrawLine(carPos, forPos, 255,0,0,255)
+            		DrawLine(forPos, LPos, 0,0,255,255)
+            		DrawLine(forPos, RPos, 0,0,255,255)
 			
 			if IsControlJustPressed(0, 172) and goUp ~= 15 then
 				goUp = goUp + 1
